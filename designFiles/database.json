@@ -1,0 +1,28 @@
+{
+  "CurrState"			: "ACTIVE",
+  "InputSensors": {
+    "soil_sensor"		: 123,
+    "temp_lm35"			: 456,
+	"dht11_humidity"	: 456,
+	"dht11_tempereture"	: 456
+  },
+  "OutputSignal": {
+    "motorpump_output"	: 1,
+    "led_output01"		: 1
+	"led_output02"		: 0
+	"led_output03"		: 1
+	"led_output04"		: 1
+	
+	"exhfan_output01"	: 1,
+	"exhfan_output01"	: 0
+  },
+  "vOutputCmd": {
+    "v_motorpump_cmd"	: "start",
+    "v_led_cmd01"		: "start",
+	"v_led_cmd02"		: "stop",
+	"v_led_cmd03"		: "start",
+	"v_led_cmd04"		: "start",
+	"v_exhfan_cmd01"		: "start",
+	"v_exhfan_cmd02"		: "stop",
+  }
+}

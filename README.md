@@ -1,2 +1,2 @@
-# AgreeTech_Sys
-Agree culture IOT system
+# AgriTech_Sys
+Agriculture IOT system

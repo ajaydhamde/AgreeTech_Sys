@@ -1,4 +1,5 @@
 {
+	"Zone"				:	1
   "CurrState"			: "ACTIVE",
   "InputSensors": {
     "soil_sensor"		: 123,

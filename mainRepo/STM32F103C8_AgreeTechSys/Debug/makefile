@@ -24,24 +24,24 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-STM32F103C8_AgreeTechSys.elf \
+STM32F103C8_AgriTechSys.elf \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-STM32F103C8_AgreeTechSys.list \
+STM32F103C8_AgriTechSys.list \
 
 OBJCOPY_BIN += \
-STM32F103C8_AgreeTechSys.bin \
+STM32F103C8_AgriTechSys.bin \
 
 
 # All Target
-all: STM32F103C8_AgreeTechSys.elf secondary-outputs
+all: STM32F103C8_AgriTechSys.elf secondary-outputs
 
 # Tool invocations
-STM32F103C8_AgreeTechSys.elf: $(OBJS) $(USER_OBJS) C:\Users\admin\STM32CubeIDE\workspace_1.3.0\STM32F103C8_AgreeTechSys\STM32F103C8TX_FLASH.ld
-	arm-none-eabi-gcc -o "STM32F103C8_AgreeTechSys.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\admin\STM32CubeIDE\workspace_1.3.0\STM32F103C8_AgreeTechSys\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F103C8_AgreeTechSys.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+STM32F103C8_AgriTechSys.elf: $(OBJS) $(USER_OBJS) C:\Users\admin\STM32CubeIDE\workspace_1.3.0\STM32F103C8_AgreeTechSys\STM32F103C8TX_FLASH.ld
+	arm-none-eabi-gcc -o "STM32F103C8_AgriTechSys.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\admin\STM32CubeIDE\workspace_1.3.0\STM32F103C8_AgreeTechSys\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F103C8_AgriTechSys.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -50,13 +50,13 @@ default.size.stdout: $(EXECUTABLES)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-STM32F103C8_AgreeTechSys.list: $(EXECUTABLES)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "STM32F103C8_AgreeTechSys.list"
+STM32F103C8_AgriTechSys.list: $(EXECUTABLES)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "STM32F103C8_AgriTechSys.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-STM32F103C8_AgreeTechSys.bin: $(EXECUTABLES)
-	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "STM32F103C8_AgreeTechSys.bin"
+STM32F103C8_AgriTechSys.bin: $(EXECUTABLES)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "STM32F103C8_AgriTechSys.bin"
 	@echo 'Finished building: $@'
 	@echo ' '
 

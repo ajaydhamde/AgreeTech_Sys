@@ -19,11 +19,11 @@
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
+#include <AgriTechSys.h>
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "AgreeTechSys.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

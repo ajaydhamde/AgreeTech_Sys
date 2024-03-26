@@ -7,7 +7,10 @@
 
 #ifndef INC_AGRITECHSYS_H_
 #define INC_AGRITECHSYS_H_
+
 #include <stdint.h>
+#define TRUE	1u
+#define FALSE	0u
 typedef enum
 {
 	IDEAL_STATE = 0,
@@ -43,10 +46,12 @@ typedef struct{
 	InputSensorsType	InputSensors;	/* InputSensor struct of system */
 	OutputSignalsType	OutputSignal;	/* OutputSignal struct of system */
 	vOutputCmdType      vOutputCmd;
+	uint8_t 			startEvent;
 }RunTimeINstanceType;
 
 /* Sharable runtime main instance */
-extern RunTimeINstanceType runTimeInstance;
+extern volatile RunTimeINstanceType runTimeInstance;
+extern volatile uint8_t tickFlage;
 
 
 #endif /* INC_AGRITECHSYS_H_ */

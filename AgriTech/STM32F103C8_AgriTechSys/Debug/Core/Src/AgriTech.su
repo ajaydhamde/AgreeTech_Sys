@@ -1,0 +1,5 @@
+AgriTech.c:26:16:Average_Tempereture_Reading	24	static
+AgriTech.c:39:16:Average_Humidity_Reading	24	static
+AgriTech.c:52:16:Average_Soil_Reading	24	static
+AgriTech.c:65:13:Update_RunTime_Instance	16	static
+AgriTech.c:79:13:Send_Data_To_Wifi	8	static
